@@ -8,7 +8,10 @@ migrations/
 
 db.sqlite3
 ssl/
+logs/
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+staticfiles/
+.DS_Store
