@@ -2,7 +2,7 @@ from ke.settings.base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'keanalytics-env.eba-5ypwhrkj.us-east-1.elasticbeanstalk.com']
 
 DATABASES = {
 'default': {
