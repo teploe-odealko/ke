@@ -54,3 +54,5 @@ jobs:
         run: aws elasticbeanstalk update-environment --environment-name ${{ env.EB_ENVIRONMENT_NAME }} --version-label "${{ github.sha }}"
       - name: Print nice message on success finish
         run: echo "CD part finished successfuly"
+      - name: Print logs
+        run: cat /var/log/eb-activity.log

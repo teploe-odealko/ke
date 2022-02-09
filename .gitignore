@@ -8,3 +8,7 @@ migrations/
 
 db.sqlite3
 ssl/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
