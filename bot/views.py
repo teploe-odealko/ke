@@ -471,8 +471,7 @@ class TutorialBotView(View):
             message = data["message"]
         except KeyError:
             print(data)
-            return JsonResponse({"ok": "POST request processed"})
-        chat = message["chat"]
+            return JsonResponse({"ok": "error data. There is no message in it"})
 
         context.step(message)
         context.show_markup(message)
