@@ -6,7 +6,7 @@ ALLOWED_HOSTS = ['*', 'keanalytics-env.eba-5ypwhrkj.us-east-1.elasticbeanstalk.c
 
 DATABASES = {
 'default': {
-    'ENGINE': 'django.db.backends.mysql',
+    'ENGINE': os.environ['RDS_DB_ENGINE'],
     'NAME': os.environ['RDS_DB_NAME'],
     'USER': os.environ['RDS_USERNAME'],
     'PASSWORD': os.environ['RDS_PASSWORD'],
