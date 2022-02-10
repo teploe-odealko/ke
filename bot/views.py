@@ -376,7 +376,6 @@ class ShopChoosing(State):
 
 class ItemTypeChoosing(State):
 
-
     def step(self, msg) -> None:
         self.context.item_type = msg['text']
         print("income choosing")
@@ -467,7 +466,9 @@ class TutorialBotView(View):
     state = None
     def post(self, request, *args, **kwargs):
         data = json.loads(request.body)
+        print(data)
         try:
+            print('in try block')
             message = data["message"]
         except KeyError:
             print(data)
